@@ -1,8 +1,10 @@
+// appRoutes.tsx
 import { JSX } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import ProfilePage from "../pages/ProfilePage";
+import ProfilePage from "../pages/ProfilePage"; // Correct path
 import Layout from "../pages/Layout";
-
+import BranchPage from "../pages/BranchPage"; // Correct path
+import BranchDetailPage from "../pages/BranchDetailPage";
 export interface AppRoute {
   path?: string;
   element: JSX.Element;
@@ -12,7 +14,8 @@ export interface AppRoute {
 
 export const webRoutes = {
   home: "/",
-  // discover: "/discover",
+  branch: "/branch",
+  branchDetail: "/branch/:location", // Dynamic route for branch detail
 };
 
 const errorElement = (
@@ -24,15 +27,16 @@ const errorElement = (
 const appRoutes: AppRoute[] = [
   {
     path: "/",
-    element: <Layout />,
+    element: <Layout />, // The layout page will wrap around all the child routes
     children: [
-      { path: webRoutes.home, element: <ProfilePage /> },
-      // { path: webRoutes.discover, element: <DiscoverPage /> },
+      { path: webRoutes.home, element: <ProfilePage /> }, // Home route
+      { path: webRoutes.branch, element: <BranchPage /> }, // Branch page route
+      { path: webRoutes.branchDetail, element: <BranchDetailPage /> }, // Branch detail page route
     ],
   },
   {
     path: "*",
-    element: <div>NotFoundPage</div>,
+    element: <div>NotFoundPage</div>, // Fallback route if not found
     errorElement: errorElement,
   },
 ];
