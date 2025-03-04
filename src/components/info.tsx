@@ -21,28 +21,31 @@
 // };
 
 // export default Info;
+import { Link } from 'react-router-dom';
 import { MoreVertical } from "lucide-react";
 
 const Info = () => {
     return (
-        <div className="max-w-sm mx-auto text-white bg-black  sm:p-3 rounded-lg shadow-md mt-3">
-            <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-2">
-                    <img
-                        src="gym.webp"
-                        alt="Member Picture"
-                        className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-4 border-green-500"
-                    />
-                    <div>
-                        <h2 className="text-lg sm:text-xl font-bold text-green-600">Allibaba</h2>
-                        <p className="text-sm sm:text-lg">079 479 794</p>
+        <Link to="/membershipDetail">
+            <div className="max-w-sm mx-auto text-white bg-black  sm:p-3 rounded-lg shadow-md mt-3">
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-2">
+                        <img
+                            src="gym.webp"
+                            alt="Member Picture"
+                            className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-4 border-green-500"
+                        />
+                        <div>
+                            <h2 className="text-lg sm:text-xl font-bold text-green-600">Allibaba</h2>
+                            <p className="text-sm sm:text-lg">079 479 794</p>
+                        </div>
                     </div>
+                    <button className=" hover:text-gray-800">
+                        <MoreVertical size={24} />
+                    </button>
                 </div>
-                <button className=" hover:text-gray-800">
-                    <MoreVertical size={24} />
-                </button>
             </div>
-        </div>
+        </Link>
     );
 };
 

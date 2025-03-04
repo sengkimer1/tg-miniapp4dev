@@ -13,7 +13,7 @@ const MembershipInfo = () => {
                 <div>
                   
                     <h2 className="text-xl sm:text-2xl font-bold text-green-600">John Doe</h2>
-                    <p className="text-sm sm:text-lg text-gray-600">Phone: (123) 456-7890</p>
+                    <p className="text-sm sm:text-lg text-gray-600">📞 079 489 890</p>
                 </div>
             </div>
 
@@ -23,7 +23,7 @@ const MembershipInfo = () => {
 
                     <div className="flex justify-between">
                         <span className="text-sm sm:text-base text-gray-700 font-medium">Workout Plan:</span>
-                        <span className="text-sm sm:text-base text-gray-600">Strength & Conditioning</span>
+                        <span className="text-sm sm:text-base text-gray-600">Strength </span>
                     </div>
 
                     <div className="flex justify-between">
