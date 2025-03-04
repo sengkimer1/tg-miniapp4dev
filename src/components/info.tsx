@@ -1,55 +1,25 @@
-// const Info = () => {
-//     return (
-
-//         <div className="max-w-xl sm:max-w-md  mx-auto bg-white sm:p-6 rounded-lg shadow-md mt-3">
-//             <div className="flex items-center space-x-4 sm:space-x-6">
-//                 <div className="relative">
-//                     <img
-//                         src="gym.webp"
-//                         alt="Member Picture"
-//                         className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-green-500"
-//                     />
-//                 </div>
-//                 <div className="pl-6">
-//                     <h2 className="text-xl sm:text-xl font-bold text-green-600">Allibaba</h2>
-//                     <p className="text-sm sm:text-lg text-gray-600">079 479 794</p>
-//                 </div>
-//             </div>
-//         </div>
-
-//     );
-// };
-
-// export default Info;
 import { Link } from 'react-router-dom';
 import { MoreVertical } from "lucide-react";
 
 const Info = () => {
     return (
-        <Link to="/membershipDetail">
-            <div className="max-w-sm mx-auto text-white bg-black  sm:p-3 rounded-lg shadow-md mt-3">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2">
-                        <img
-                            src="gym.webp"
-                            alt="Member Picture"
-                            className="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-4 border-green-500"
-                        />
-                        <div>
-                            <h2 className="text-lg sm:text-xl font-bold text-green-600">Allibaba</h2>
-                            <p className="text-sm sm:text-lg">079 479 794</p>
-                        </div>
-                    </div>
-                    <button className=" hover:text-gray-800">
-                        <MoreVertical size={24} />
-                    </button>
+        <Link to="/membershipDetail" className="flex flex-col items-center w-full p-4">
+            <div className="flex flex-col items-center gap-6 p-5 md:flex-row md:gap-8 bg-black text-white rounded-2xl shadow-xl w-full max-w-4xl">
+                <img
+                    src="gym.webp"
+                    alt="Member Picture"
+                    className="size-28 shadow-xl rounded-md border-2 border-green-500 object-cover"
+                />
+                <div className="flex flex-col items-center md:items-start">
+                    <h2 className="text-xl font-bold text-green-600">Allibaba</h2>
+                    <p className="text-lg">079 479 794</p>
                 </div>
+                <button className="hover:text-gray-800 self-start">
+                    <MoreVertical size={24} />
+                </button>
             </div>
         </Link>
     );
 };
 
 export default Info;
-
-
-
