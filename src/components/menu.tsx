@@ -38,8 +38,8 @@ const Sidebar: React.FC = () => {
         <MenuItem icon={Infinity} label="Workout-Plan" to="/workout-plan" isOpen={isOpen} />
         <MenuItem icon={Percent} label="Promo" to="/promo" isOpen={isOpen} />
         <MenuItem icon={Gift} label="Coupon" to="/coupon" isOpen={isOpen} />
-        <MenuItem icon={Grid} label="Workout" to="/workout" isOpen={isOpen} />
-        <MenuItem icon={User} label="Info" to="/info" isOpen={isOpen} />
+        {/* <MenuItem icon={Grid} label="Workout" to="/workout" isOpen={isOpen} /> */}
+        <MenuItem icon={User} label="Membership-Info" to="/membershipInfo" isOpen={isOpen} />
       </nav>
     </div>
   );

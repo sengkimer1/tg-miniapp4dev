@@ -9,6 +9,9 @@ import Membership_plan from "../pages/membership_plan"
 
 import BranchPage from "../pages/BranchPage"; // Correct path
 import BranchDetailPage from "../pages/BranchDetailPage";
+import Header from "../pages/Header";
+import MembershipDetail from "../pages/MembershipDetail";
+import MembershipInfo from "../pages/MembershipInfo";
 export interface AppRoute {
   path?: string;
   element: JSX.Element;
@@ -20,7 +23,9 @@ export const webRoutes = {
   home: "/",
   workoutPlanPage: "/workout-plan",
   coupon: "/coupon",
-
+  header: "/header",
+  MembershipInfo: "/membershipInfo",
+  MembershipDetail: "/membershipDetail",
 
   Membership_plan: "/membership",
   // discover: "/discover",
@@ -43,6 +48,9 @@ const appRoutes: AppRoute[] = [
       { path: webRoutes.workoutPlanPage, element: <WorkoutPlan /> },
       { path: webRoutes.coupon, element: <Coupon /> },
       { path: webRoutes.Membership_plan, element: <Membership_plan /> },
+      { path: webRoutes.header, element: <Header /> },
+      { path: webRoutes.MembershipInfo, element: <MembershipInfo /> },
+      { path: webRoutes.MembershipDetail, element: <MembershipDetail /> },
 
       // { path: webRoutes.discover, element: <DiscoverPage /> },
       { path: webRoutes.home, element: <ProfilePage /> }, // Home route
