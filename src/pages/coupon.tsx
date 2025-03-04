@@ -1,20 +1,19 @@
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
-import pic_coupon from "../image/pic-coupon.png"
+import pic_coupon from "../image/pic-coupon.png";
 
 const Coupon = () => {
   return (
-    <div className="bg-[#d3c4c4] flex justify-center items-center min-h-screen p-4">
+    <div className="bg-black flex justify-center items-center p-4 ">
       {/* Main Container */}
-      <div className="flex w-[100%] max-w-md bg-black rounded-lg overflow-hidden shadow-md">
+      <div className="flex flex-wrap w-[100%] max-w-md bg-black rounded-lg overflow-hidden shadow-md">
         
         {/* Left Section (Image) */}
-        <div className="w-1/2 relative">
+        <div className="w-1/2">
           <img
             src={pic_coupon}
             alt="Gym"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-green-700 opacity-30 clip-triangle"></div>
         </div>
 
         {/* Right Section (Content) */}

@@ -7,7 +7,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ text, imageSrc, onClick }) => {  return (
-    <div className="w-full max-w-[200px] h-[80px] bg-black text-white text-xs flex items-center justify-center relative">
+    <div className="w-full max-w-[200px] h-[80px] bg-black  text-white text-xs flex items-center justify-center relative">
       {/* Button with Image */}
       <button onClick={onClick} className="w-[50px] h-[50px] bg-green-500 text-black text-xs flex items-center justify-center absolute left-3">
         <img src={imageSrc} alt={imageSrc} className="w-full h-full object-cover" />

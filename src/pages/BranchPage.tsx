@@ -18,7 +18,7 @@ const BranchPage: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen gap-2 p-2">
+    <div className="flex flex-col justify-center items-center  gap-2 p-2">
       {/* Branch Header */}
       <div className="flex justify-between w-full max-w-[400px] px-2 mb-2 text-black mr-3">
         <div className="text-base font-bold">Branch</div>

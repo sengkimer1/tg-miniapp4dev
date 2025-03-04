@@ -9,7 +9,7 @@ const Sidebar: React.FC = () => {
     <div  >
       {/* Toggle Button */}
       <button
-        className="absolute -left-1 text-white p-1 rounded-full"
+        className="absolute -left-1 text-black p-1 rounded-full"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? "◀" : "▶"}
@@ -17,7 +17,7 @@ const Sidebar: React.FC = () => {
 
       {/* Logo */}
       <h2
-        className={`text-lg font-bold transition-all ${
+        className={`text-lg font-bold transition-all text-black ${
           isOpen ? "opacity-100" : "opacity-0 hidden"
         }`}
       >
