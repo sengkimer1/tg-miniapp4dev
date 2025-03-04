@@ -29,7 +29,6 @@ const BranchPage: React.FC = () => {
   {showAll ? "See Less" : "See All"} {/* "See All" is green initially, "See Less" is red */}
 </div>
 
-
       </div>
 
       {/* Buttons (conditional rendering based on state) */}
