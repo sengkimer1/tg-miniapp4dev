@@ -1,7 +1,8 @@
 // BranchPage.tsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from './Button'; // UI Button Component
+import Button from '../components/Button'; 
+import Sidebar from '../components/Sidebar'
 
 const BranchPage: React.FC = () => {
   const navigate = useNavigate();
@@ -19,6 +20,8 @@ const BranchPage: React.FC = () => {
 
   return (
     <div className="flex flex-col justify-center items-center  gap-2 p-2">
+            <div className='text-start'>   <Sidebar />
+
       {/* Branch Header */}
       <div className="flex justify-between w-full max-w-[400px] px-2 mb-2 text-black mr-3">
         <div className="text-base font-bold">Branch</div>
@@ -49,6 +52,7 @@ const BranchPage: React.FC = () => {
             <Button text="Hulk Gym - Khan 7 Makara Branch" imageSrc="img8.png" onClick={() => handleNavigation('7Makara')} />
           </>
         )}
+      </div>
       </div>
     </div>
   );
